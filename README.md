@@ -10,7 +10,7 @@ The website provides a responsive, user-friendly interface for customers to:
 - Place orders online for pickup or delivery
 - Stay informed about new products and promotions
 
-## 🧩 Technologies Used
+## Technologies Used
 
 ### Frontend:
 - HTML5
