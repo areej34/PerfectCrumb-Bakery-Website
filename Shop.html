@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PerfectCrumb Shop</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script src="Shop.js"></script>
+  <script src="header.js"></script>
+  <script src="shared.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo-wrapper">
+      <img src="images/logo.jpg" alt="PerfectCrumb" class="logo">
+      <h1>PerfectCrumb</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Shop.html">Shop</a>
+      <a href="About.html">About</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+    <div class="icons">
+      <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+      <a href="wishlist.html"><i class="fas fa-heart"></i></a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images\header 2.jpg" alt="Hero Image" id="banner">
+    <div class="hero-text" id="bannertext">
+      <h2>Shop</h2>
+      <p>Home > Shop</p>
+    </div>
+  </section>
+
+    <!-- Baked Collection -->
+  <section class="baked-collection">
+    <h2>Freshly Baked</h2>
+    <div class="shop-search">
+      <input type="text" id="shopSearchInput" placeholder="Search for a treat..." />
+    </div>
+    <div class="shop-grid">
+    <!-- Single Bakery Item Card -->
+      <div class="item-card">
+        <div class="item-image">
+          <img src="images\midnight moqa.jpg" alt="Midnight Mocha Cake">
+          <button class="add-to-cart">Add to cart</button>
+          <div class="overlay-actions">
+            <span><i class="fas fa-share"></i> Share</span>
+            <span><i class="fas fa-exchange-alt"></i> Compare</span>
+            <span class="wishlist-btn" data-name="Midnight Mocha Cake" data-price="2000" data-img="images/midnight moqa.jpg">
+                <i class="far fa-heart"></i> Like
+            </span>
+          </div>
+        </div>
+        <div class="item-info">
+          <h4>Midnight Mocha Cake</h4>
+          <p>Rs 2,000</p>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <div class="item-image">
+          <img src="images\Lemon Raspberry Cake.jpg" alt="Lemon Raspberry Bar">
+          <button class="add-to-cart">Add to cart</button>
+          <div class="overlay-actions">
+            <span><i class="fas fa-share"></i> Share</span>
+            <span><i class="fas fa-exchange-alt"></i> Compare</span>
+            <span class="wishlist-btn" data-name="Lemon Raspberry Bar" data-price="1,200" data-img="images\Lemon Raspberry Cake.jpg">
+                <i class="far fa-heart"></i> Like
+            </span>
+          </div>
+        </div>
+        <div class="item-info">
+          <h4>Lemon Raspberry Bar</h4>
+          <p>Rs 1,200</p>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <div class="item-image">
+          <img src="images\hazlenut Choux Buns.jpg" alt="Hazelnut Choux Pastry">
+          <button class="add-to-cart">Add to cart</button>
+          <div class="overlay-actions">
+            <span><i class="fas fa-share"></i> Share</span>
+            <span><i class="fas fa-exchange-alt"></i> Compare</span>
+            <span class="wishlist-btn" data-name="Hazelnut Choux Pastry" data-price="900" data-img="images\hazlenut Choux Buns.jpg">
+                <i class="far fa-heart"></i> Like
+            </span>
+          </div>
+        </div>
+        <div class="item-info">
+          <h4>Hazelnut Choux Pastry</h4>
+          <p>Rs 900</p>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <div class="item-image">
+          <img src="images\red velvet cupcake.jpg" alt="Red Velvet Swirl Cupcake">
+          <button class="add-to-cart">Add to cart</button>
+          <div class="overlay-actions">
+            <span><i class="fas fa-share"></i> Share</span>
+            <span><i class="fas fa-exchange-alt"></i> Compare</span>
+            <span class="wishlist-btn" data-name="Red Velvet Swirl Cupcake" data-price="500" data-img="images\red velvet cupcake.jpg">
+                <i class="far fa-heart"></i> Like
+            </span>
+          </div>
+        </div>
+        <div class="item-info">
+          <h4>Red Velvet Swirl Cupcake</h4>
+          <p>Rs 500</p>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <div class="item-image">
+          <img src="images\Mini Fruit Tarts.jpg" alt="Tropical Fruit Tartlet">
+          <button class="add-to-cart">Add to cart</button>
+          <div class="overlay-actions">
+            <span><i class="fas fa-share"></i> Share</span>
+            <span><i class="fas fa-exchange-alt"></i> Compare</span>
+            <span class="wishlist-btn" data-name="Tropical Fruit Tartlet" data-price="800" data-img="images\Mini Fruit Tarts.jpg">
+                <i class="far fa-heart"></i> Like
+            </span>
+          </div>
+        </div>
+        <div class="item-info">
+          <h4>Tropical Fruit Tartlet</h4>
+          <p>Rs 800</p>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <div class="item-image">
+          <img src="images\brownie sundae.jpg" alt="Brownie Fudge Sundae">
+          <button class="add-to-cart">Add to cart</button>
+          <div class="overlay-actions">
+            <span><i class="fas fa-share"></i> Share</span>
+            <span><i class="fas fa-exchange-alt"></i> Compare</span>
+            <span class="wishlist-btn" data-name="Brownie Fudge Sundae" data-price="700" data-img="images\brownie sundae.jpg">
+                <i class="far fa-heart"></i> Like
+            </span>
+          </div>
+        </div>
+        <div class="item-info">
+          <h4>Brownie Fudge Sundae</h4>
+          <p>Rs 700</p>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <div class="item-image">
+          <img src="images\Salted Caramel Cookies.jpg" alt="Salted Caramel Crunch Cookie">
+          <button class="add-to-cart">Add to cart</button>
+          <div class="overlay-actions">
+            <span><i class="fas fa-share"></i> Share</span>
+            <span><i class="fas fa-exchange-alt"></i> Compare</span>
+            <span class="wishlist-btn" data-name="Salted Caramel Crunch Cookie" data-price="1,000" data-img="images\Salted Caramel Cookies.jpg">
+                <i class="far fa-heart"></i> Like
+            </span>
+          </div>
+        </div>
+        <div class="item-info">
+          <h4>Salted Caramel Crunch Cookie</h4>
+          <p>Rs 1,000</p>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <div class="item-image">
+          <img src="images\almond mocha.jpg" alt="Almond Mocha Bites">
+          <button class="add-to-cart">Add to cart</button>
+          <div class="overlay-actions">
+            <span><i class="fas fa-share"></i> Share</span>
+            <span><i class="fas fa-exchange-alt"></i> Compare</span>
+            <span class="wishlist-btn" data-name="Almond Mocha Bites" data-price="500" data-img="images\almond mocha.jpg">
+                <i class="far fa-heart"></i> Like
+            </span>
+          </div>
+        </div>
+        <div class="item-info">
+          <h4>Almond Mocha Bites</h4>
+          <p>Rs 500</p>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <div class="item-image">
+          <img src="images\Lemon Blueberry Cheesecakes.jpg" alt="Mini Lemon Blueberry Cheesecakes">
+          <button class="add-to-cart">Add to cart</button>
+          <div class="overlay-actions">
+            <span><i class="fas fa-share"></i> Share</span>
+            <span><i class="fas fa-exchange-alt"></i> Compare</span>
+            <span class="wishlist-btn" data-name="Mini Lemon Blueberry Cheesecakes" data-price="800" data-img="images\Lemon Blueberry Cheesecakes.jpg">
+                <i class="far fa-heart"></i> Like
+            </span>
+          </div>
+        </div>
+        <div class="item-info">
+          <h4>Mini Lemon Blueberry Cheesecakes</h4>
+          <p>Rs 800</p>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <div class="item-image">
+          <img src="images\strawberry macaroons.jpg" alt="strawberry macaroons">
+          <button class="add-to-cart">Add to cart</button>
+          <div class="overlay-actions">
+            <span><i class="fas fa-share"></i> Share</span>
+            <span><i class="fas fa-exchange-alt"></i> Compare</span>
+            <span class="wishlist-btn" data-name="strawberry macaroons" data-price="500" data-img="images\strawberry macaroons.jpg">
+                <i class="far fa-heart"></i> Like
+            </span>
+          </div>
+        </div>
+        <div class="item-info">
+          <h4>Strawberry macaroons</h4>
+          <p>Rs 500</p>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <section class="features-bar">
+  <div class="feature">
+    <i class="fa-solid fa-bread-slice"></i>
+    <p><strong>Freshly Baked</strong><br>Bread & treats made daily with love</p>
+  </div>
+
+  <div class="feature">
+    <i class="fa-solid fa-hand-holding-heart"></i>
+    <p><strong>Custom Orders</strong><br>Tailored cakes & gifts for any occasion</p>
+  </div>
+
+  <div class="feature">
+    <i class="fa-solid fa-truck"></i>
+    <p><strong>Fast Delivery</strong><br>On-time delivery across the city</p>
+  </div>
+
+  <div class="feature">
+    <i class="fa-solid fa-phone-volume"></i>
+    <p><strong>Customer Care</strong><br>Friendly help 7 days a week</p>
+  </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-column brand">
+      <h3>PerfectCrumb.</h3>
+      <p>Comsats University Circle Suite,<br>Islamabad Pakistan</p>
+    </div>
+    <div class="footer-column links">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Shop.html">Shop</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-column help">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="#">Payment Options</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Privacy Policies</a></li>
+      </ul>
+    </div>
+    <div class="footer-column newsletter">
+      <h4>Newsletter</h4>
+      <form>
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 PerfectCrumb. All rights reserved</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script src="header.js"></script>
+  <script src="Checkout.js"></script>
+  <script src="shared.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo-wrapper">
+      <img src="images/logo.jpg" alt="PerfectCrumb" class="logo">
+      <h1>PerfectCrumb</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Shop.html">Shop</a>
+      <a href="About.html">About</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+    <div class="icons">
+      <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+      <a href="wishlist.html"><i class="fas fa-heart"></i></a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="images\header 2.jpg" alt="Hero Cake" id="banner">
+    <div class="hero-text" id="bannertext">
+      <h2>Checkout</h2>
+      <p>Cart > Checkout</p>
+    </div>
+  </section>
+
+  <!-- Checkout Container -->
+  <div class="container">
+    <!-- Billing Details -->
+    <div class="billing">
+      <h2>Billing details</h2>
+      <form>
+        <label for="first_name">First Name</label>
+        <input type="text" id="first_name" name="first_name">
+
+        <label for="last_name">Last Name</label>
+        <input type="text" id="last_name" name="last_name">
+
+        <label for="label_name">Label Name (Optional)</label>
+        <input type="text" id="label_name" name="label_name">
+
+        <label for="country">Country / Region</label>
+        <select id="country" name="country">
+          <option>Sri Lanka</option>
+        </select>
+
+        <label for="street_address">Street address</label>
+        <input type="text" id="street_address" name="street_address">
+
+        <label for="town">Town / City</label>
+        <input type="text" id="town" name="town">
+
+        <label for="province">Province</label>
+        <select id="province" name="province">
+          <option>Western Province</option>
+        </select>
+
+        <label for="zip">ZIP code</label>
+        <input type="text" id="zip" name="zip">
+
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" name="phone">
+
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email">
+
+        <label for="additional_info">Additional information</label>
+        <textarea id="additional_info" name="additional_info" rows="3"></textarea>
+      </form>
+    </div>
+
+    
+
+    <div class="order">
+      <h2>Product</h2>
+      <div class="order-summary">
+
+      <!-- Dynamically injected items will appear here -->
+      <div class="checkout-items">
+        <!-- JS will inject .checkout-item rows here -->
+      </div>
+
+      <!-- Total amount -->
+      <div class="checkout-total">
+        <!-- JS will insert total like: Total: Rs 3,000/- -->
+      </div>
+      </div>
+
+
+      <!-- Payment Methods -->
+      <div class="payment-methods">
+        <label>
+          <input type="radio" name="payment" value="bank1" checked>
+          Direct Bank Transfer
+        </label>
+        <p style="font-size: 12px; color: #555;">
+          Make your payment directly into our bank account. Please use your Order ID as the payment reference.
+          Your order will not be shipped until the funds have cleared in our account.
+        </p>
+        <label>
+          <input type="radio" name="payment" value="bank2">
+          Another Bank Transfer
+        </label><br>
+        <label>
+          <input type="radio" name="payment" value="cod">
+          Cash On Delivery
+        </label><br>
+      </div>
+
+      <p style="font-size: 12px; color: #555; margin-top: 20px;">
+        Your personal data will be used to support your experience throughout this website,
+        to manage access to your account, and for other purposes described in our <b>privacy policy</b>.
+      </p>
+
+      <button class="place-order-btn">Place order</button>
+    </div>
+  </div>
+
+  <section class="features-bar">
+  <div class="feature">
+    <i class="fa-solid fa-bread-slice"></i>
+    <p><strong>Freshly Baked</strong><br>Bread & treats made daily with love</p>
+  </div>
+
+  <div class="feature">
+    <i class="fa-solid fa-hand-holding-heart"></i>
+    <p><strong>Custom Orders</strong><br>Tailored cakes & gifts for any occasion</p>
+  </div>
+
+  <div class="feature">
+    <i class="fa-solid fa-truck"></i>
+    <p><strong>Fast Delivery</strong><br>On-time delivery across the city</p>
+  </div>
+
+  <div class="feature">
+    <i class="fa-solid fa-phone-volume"></i>
+    <p><strong>Customer Care</strong><br>Friendly help 7 days a week</p>
+  </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-column brand">
+      <h3>PerfectCrumb.</h3>
+      <p>Comsats University Circle Suite,<br>Islamabad Pakistan</p>
+    </div>
+    <div class="footer-column links">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Shop.html">Shop</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-column help">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="#">Payment Options</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Privacy Policies</a></li>
+      </ul>
+    </div>
+    <div class="footer-column newsletter">
+      <h4>Newsletter</h4>
+      <form>
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 PerfectCrumb. All rights reserved</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
+
+
+</body>
+</html>
